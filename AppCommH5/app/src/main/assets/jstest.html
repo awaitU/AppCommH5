@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML>
+<HEAD>
+    <meta name="viewport"
+          content="width=device-width, target-densitydpi=device-dpi"/>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+	var str = "正在调用";
+	function androidCallJS(name) {
+		alert("android call me!" + name);
+	}
+	function testJsCallAndroid(name){
+    	JsTest.JsCallAndroid(name);
+   }
+
+    </script>
+
+</HEAD>
+<BODY>
+</br>
+<button id='btntest' style="width:100%;height:50px;" onclick="testJsCallAndroid(str)">
+    JS调用android的方法
+</button>
+
+</BODY>
+
+</HTML>
